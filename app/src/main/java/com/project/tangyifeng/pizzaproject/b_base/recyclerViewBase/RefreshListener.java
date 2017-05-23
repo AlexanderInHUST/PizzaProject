@@ -6,5 +6,7 @@ package com.project.tangyifeng.pizzaproject.b_base.recyclerViewBase;
  * Since: 2017/5/23.
  */
 
-public class RefreshListener {
+public interface RefreshListener {
+    void onRefreshStateChanged(boolean isRefreshing);
+    void onError(Throwable t);
 }
